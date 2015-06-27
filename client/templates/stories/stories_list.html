@@ -1,0 +1,20 @@
+<template name="storiesList">
+    {{#each stories}}
+        {{> story}}
+    {{/each}}
+</template>
+
+<template name="story">
+    <div class="media">
+        <div class="media-left nums-score">
+            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+            {{score}}
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading"><a href="{{pathFor 'storyPage'}}">{{body}}</a></h4>
+            <p>submitted {{elapsedTime}} by <a href="">Anonymous</a></p>
+            <span><small><a href="{{pathFor 'storyPage'}}">0 comments</a></small></span> / <span><small><a href="">share</a></small></span>
+        </div>
+    </div>
+</template>
