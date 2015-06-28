@@ -7,8 +7,6 @@ Template.submit.events({
         };
         $(e.target).find('[name=body]').val('');
 
-        // story._id = Stories.insert(story);
-
         Meteor.call('insertStory', story, function(error, result) {
             if (error) {
                 alert(error);
