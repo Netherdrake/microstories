@@ -10,3 +10,7 @@ twbs:bootstrap
 stevezhu:lodash
 momentjs:moment
 yasaricli:slugify
+ian:accounts-ui-bootstrap-3
+accounts-password
+accounts-facebook
+meteorhacks:kadira
